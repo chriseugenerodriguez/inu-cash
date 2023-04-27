@@ -1,0 +1,428 @@
+<div class="main p-3 p-md-5">
+  <div class="container">
+    <div class="row justify-content-between main__header">
+      <div class="col col-md-5 col-sm-6 mx-md-0 mx-sm-auto main__heading">
+        <h1 class="display-6 font-weight-normal">
+          Buy, Sell, Swap. <span>Secure, Fast, Low Fee.</span>
+        </h1>
+        <div class="row col-md-9">
+          <div class="col col-md-6">
+            <a class="btn small btn-primary display-8" href="/#buy">Buy Now</a>
+          </div>
+          <div class="col col-md-6">
+            <a class="col col-md-6 btn clear btn-outline-secondary" href="/#buy">
+              Live Chart
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__qr-code">
+        <div class="main__qr-code__qr">
+          <img class="qr" src="assets/img/qr-code.png" />
+        </div>
+        <h4 class="text-center mb-1 mt-0">Get free Coins</h4>
+        <span>Scan the QR code, and claim free INU coins.</span>
+      </div>
+    </div>
+    <div class="row main__highlights mx-sm-auto mx-md-0" style="display: none;">
+      <div class="col col-md-3 col-sm-6">
+        <h3 class="text-center mb-1 mt-0">{{tCap}}</h3>
+        <span>Market Cap</span>
+      </div>
+      <div class="col col-md-3 col-sm-6">
+        <h3 class="text-center mb-1 mt-0">{{tvolume}}</h3>
+        <span>Volume (24h)</span>
+      </div>
+      <div class="col col-md-3 col-sm-6">
+        <h3 class="text-center mb-1 mt-0">{{tSupply}}</h3>
+        <span>Total Supply</span>
+      </div>
+      <div class="col col-md-3 col-sm-6">
+        <h3 class="text-center mb-1 mt-0">{{tPrice}}</h3>
+        <span>Price</span>
+      </div>
+    </div>
+
+    <div class="main__circles" id="circles">
+      <div class="main__circles-circle"></div>
+      <div class="main__circles-circle"></div>
+      <div class="main__circles-circle"></div>
+      <div class="main__circles-circle"></div>
+
+      <aside class="main__circles-warning">
+        <span>View in Chrome, Firefox or Safari for the best effect!</span>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<section class="what">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-6 offset-1">
+        <h5 class="mt-0 mb-0">$UNI</h5>
+        <h2 class="mt-0">What is Uni Cash</h2>
+        <p class="text-muted what-intro">
+          The $UNI Coin project was created for the sole purpose of storing, and moving digital money easily.
+          Community-owned project with most popular Defi protocols for holders; hyper-deflationary, reflection,
+          and inherent burn.
+          <span class="mt-2">Join us on Telegram, Discord, Twitter, and join our ever growing #UniCoin community.</span>
+        </p>
+        <div class="col col-md-11 mr-auto">
+          <div class="row justify-content-start mt-3">
+            <div class="col-md-6">
+              <div class="what-info">
+                <h4>Common Highlights.</h4>
+                <p class="pe-3 text-muted">Attracting all types of investors by rewarding holders for the upward climb.
+                  Increasing their hold value overtime with rewards, airdrop, deflation, reflaction, and burn.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="what-info">
+                <h4>Exchange Highlights.</h4>
+                <p class="pe-3 text-muted">Buy, sell, and swap all forms of digital money without the worry from
+                  exchanges. No more concern over reverence, fees, security, liquidation, and slippage.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 p-lg-4 mt-lg-0 mt-4">
+        <img class="what-money" src="assets/img/money-pile.png" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="roadmap" id="roadmap">
+  <div class="container">
+    <h3 class="h6 mb-0 text-uppercase">Roadmap</h3>
+    <h2 class="h1 mb-lg-5 mb-4">General plan ahead.</h2>
+
+    <owl-carousel-o [options]="roadMapOptions">
+      <ng-template carouselSlide>
+        <div class="roadmap__step-head mb-3">
+          <span class="roadmap__step-indicator">01</span>
+          <span class="roadmap__step-line"></span>
+        </div>
+        <div class="roadmap__step-body">
+          <h6 class="mb-0 mt-0 pending">In Progress</h6>
+          <h3 class="h5 mt-0 mb-2">Protocol Release</h3>
+          <p class="mb-0 text-muted">Public release of our ERC20 smart contract to Etherium blockchain with initial
+            features.</p>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="roadmap__step-head mb-3">
+          <span class="roadmap__step-indicator">02</span>
+          <span class="roadmap__step-line"></span>
+        </div>
+        <div class="roadmap__step-body">
+          <h6 class="mb-0 mt-0">Pending</h6>
+          <h3 class="h5 mt-0 mb-2">Expansion & Marketing</h3>
+          <p class="mb-0 text-muted">Releasing on multiple exchanges, adding liquidity to create supply, and creating
+            more brand awareness.</p>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="roadmap__step-head mb-3">
+          <span class="roadmap__step-indicator">03</span>
+          <span class="roadmap__step-line"></span>
+        </div>
+        <div class="roadmap__step-body">
+          <h6 class="mb-0 mt-0">Pending</h6>
+          <h3 class="h5 mt-0 mb-2">Development & R/D</h3>
+          <p class="mb-0 text-muted">Adding new features to coin smart contract to allow purchasing, swaping, staking,
+            pooling on blockchain.</p>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="roadmap__step-head mb-3">
+          <span class="roadmap__step-indicator">04</span>
+          <span class="roadmap__step-line"></span>
+
+        </div>
+        <div class="roadmap__step-body">
+          <h6 class="mb-0 mt-0">Pending</h6>
+          <h3 class="h5 mt-0 mb-2">Initial Push</h3>
+          <p class="mb-0 text-muted">Expanding social profiles and brand awareness of coin with free airdrops,
+            sweepstakes, and other opportunities.</p>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="roadmap__step-head mb-3">
+          <span class="roadmap__step-indicator">05</span>
+          <span class="roadmap__step-line"></span>
+        </div>
+        <div class="roadmap__step-body">
+          <h6 class="mb-0 mt-0">Pending</h6>
+          <h3 class="h5 mt-0 mb-2">Business Partnerships</h3>
+          <p class="mb-0 text-muted">Market brand towards partnerships with different business to invest in brand
+            adoption with their services offering.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="roadmap__step-head mb-3">
+          <span class="roadmap__step-indicator">06</span>
+          <span class="roadmap__step-line"></span>
+        </div>
+        <div class="roadmap__step-body">
+          <h6 class="mb-0 mt-0">Pending</h6>
+          <h3 class="h5 mt-0 mb-2">Product Development</h3>
+          <p class="mb-0 text-muted">Building ontop of initial product offering with new platform features for investors
+            with an in-house exchange, and browser wallet.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="roadmap__step-head mb-3">
+          <span class="roadmap__step-indicator">07</span>
+        </div>
+        <div class="roadmap__step-body">
+          <h6 class="mb-0 mt-0">Pending</h6>
+          <h3 class="h5 mt-0 mb-2">Build & Optimize</h3>
+          <p class="mb-0 text-muted">Looking to audit every aspect of product offering to improve functionality,
+            scalability, and increase community oversight with voting initiatives.
+          </p>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+
+<section class="buy" id="buy">
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center">How to buy $INU</h2>
+      <tabset class="col col-5 mx-auto">
+        <tab heading="Step 1" id="tab1">
+          <span>01</span>
+          <h3>Create a MetaMask Wallet</h3>
+          <p class="text-muted">
+            $INU token is available on the Ethereum blockchain. MetaMask is the market leader in ERC20 (Ethereum)
+            wallets. On Google Chrome, visit <a href="metamask.io" target="_blank">metamask.io</a> to download the
+            extension and set up a wallet. On mobile? Get MetaMask's app for iPhone or Android.
+          </p>
+        </tab>
+        <tab heading="Step 2">
+          <span>02</span>
+          <h3>Send $ETH to MetaMask</h3>
+          <p class="text-muted">
+            Buy Ethereum through MetaMask or transfer it to your MetaMask wallet address from another wallet (e.g.
+            Coinbase or Binance).
+          </p>
+        </tab>
+        <tab heading="Step 3">
+          <span>03</span>
+          <h3>Visit INU Swap (coming soon)</h3>
+          <p class="text-muted">You can currently buy $INU on INU Swap, INU's official decentralized exchange where you
+            can swap any ERC20
+            token.</p>
+        </tab>
+        <tab heading="Step 4">
+          <span>04</span>
+          <h3>Swap $ETH for $INU</h3>
+          <p class="text-muted">Enter the amount of $ETH you would like to swap for $INU. Click Connect Wallet then
+            Swap.</p>
+        </tab>
+      </tabset>
+    </div>
+  </div>
+</section>
+
+<section class="tokenomics" id="tokenomics">
+  <div class="container">
+    <div class="row align-items-center">
+      <div id="coins" class="col-lg-3 ms-auto me-auto p-lg-4 mt-lg-0 mt-4 tokenomics__coins">
+        <div class="tokenomics__coins-layer tokenomics__coins-layer-xsmall" data-depth=".24" data-calibrate-x="0"
+          data-calibrate-y="0.5" data-limit-x="2" data-limit-y="3">
+          <img src="assets/svg/coin.svg" alt="layer" />
+        </div>
+        <div class="tokenomics__coins-layer tokenomics__coins-layer-xsmall" data-depth=".18" data-calibrate-x="0"
+          data-calibrate-y="0.5" data-limit-x="2" data-limit-y="3">
+          <img src="assets/svg/coin.svg" alt="layer" />
+        </div>
+        <div class="tokenomics__coins-layer tokenomics__coins-layer-xsmall" data-depth=".22" data-calibrate-x="0"
+          data-calibrate-y="0.5" data-limit-x="2" data-limit-y="3">
+          <img src="assets/svg/coin.svg" alt="layer" />
+        </div>
+        <div class="tokenomics__coins-layer tokenomics__coins-layer-small" data-depth=".15" data-limit-x="true"
+          data-limit-y="true" data-origin-x="100" data-origin-y="-200">
+          <img src="assets/svg/coin.svg" alt="layer" />
+        </div>
+        <div class="tokenomics__coins-layer tokenomics__coins-layer-small" data-depth=".2" data-limit-x="true"
+          data-limit-y="true" data-origin-x="100" data-origin-y="-200">
+          <img src="assets/svg/coin.svg" alt="layer" />
+        </div>
+        <div class="tokenomics__coins-layer tokenomics__coins-layer-small" data-depth=".12" data-limit-x="true"
+          data-limit-y="true" data-origin-x="100" data-origin-y="-200">
+          <img src="assets/svg/coin.svg" alt="layer" />
+        </div>
+        <div class="tokenomics__coins-layer tokenomics__coins-layer-medium" data-depth=".19" data-calibrate-x="0"
+          data-calibrate-y="0.5" data-limit-x="2" data-limit-y="3">
+          <img src="assets/svg/coin.svg" alt="layer" />
+        </div>
+        <div class="tokenomics__coins-layer tokenomics__coins-layer-medium" data-depth=".13" data-calibrate-x="0"
+          data-calibrate-y="0.5" data-limit-x="2" data-limit-y="3">
+          <img src="assets/svg/coin.svg" alt="layer" />
+        </div>
+        <div class="tokenomics__coins-layer tokenomics__coins-layer-medium" data-depth=".16" data-calibrate-x="0"
+          data-calibrate-y="0.5" data-limit-x="2" data-limit-y="3">
+          <img src="assets/svg/coin.svg" alt="layer" />
+        </div>
+        <div class="tokenomics__coins-layer tokenomics__coins-layer-xmedium" data-depth=".1" data-calibrate-x="0"
+          data-calibrate-y="0.5" data-limit-x="2" data-limit-y="3">
+          <img src="assets/svg/coin.svg" alt="layer" />
+        </div>
+        <div class="tokenomics__coins-layer tokenomics__coins-layer-large" data-depth=".05" data-calibrate-x="0"
+          data-calibrate-y="0.5" data-limit-x="2" data-limit-y="3">
+          <img src="assets/svg/coin.svg" alt="layer" />
+        </div>
+      </div>
+      <div class="col-lg-6 ms-auto me-auto">
+        <h2>Tokenomics</h2>
+        <p class="text-muted">
+          Built in a hybrid feature system of all the best features for the common investor. Fixing
+          some common issues with reverence and transaction headaches. Adding governance, compliance tools into protocol
+          to preserve and weigh in on future proposals from the community.
+        </p>
+        <div class="col col-md-11 ms-auto">
+          <div class="row mt-5">
+            <div class="col-md-6">
+              <div class="tokenomics__highlight mt-2">
+                <div class="tokenomics__highlight-text">
+                  <h5>Community Driven</h5>
+                  <p class="pe-3 text-muted">Community driven & fair launch. The dev team burned all of their tokens and
+                    participated with everyone else.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="tokenomics__highlight mt-2">
+                <div class="tokenomics__highlight-text">
+                  <h5>Automatic LP</h5>
+                  <p class="pe-3 text-muted">Every trade contributes towards automatically generating liquidity that
+                    goes into multiple pools used by exchanges</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <div class="tokenomics__highlight mt-2">
+                <div class="tokenomics__highlight-text">
+                  <h5>RFI Static Rewards</h5>
+                  <p class="pe-3 text-muted">Holders earn passive rewards through static reflection as they watch their
+                    balance grow indefinitely.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="tokenomics__highlight mt-2">
+                <div class="tokenomics__highlight-text">
+                  <h5>Hyper Deflationary</h5>
+                  <p class="pe-3 text-muted">4% of every transaction is burnt automatically to decrease total supply
+                    overtime.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <div class="tokenomics__highlight mt-2">
+                <div class="tokenomics__highlight-text">
+                  <h5>Secure Payments</h5>
+                  <p class="pe-3 text-muted">We use industry-standard public-key cryptography tools and techniques. Each
+                    transaction is signed and audited automatically.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="tokenomics__highlight mt-2">
+                <div class="tokenomics__highlight-text">
+                  <h5>Fast Transactions</h5>
+                  <p class="pe-3 text-muted">Able to liquidate fast (1.5 sec) compared to other coins (3.5m) into your
+                    stable coin of choice when buying, selling, or swaping.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <div class="tokenomics__highlight mt-2">
+                <div class="tokenomics__highlight-text">
+                  <h5>Decentralized Exchange (DeX)</h5>
+                  <p class="pe-3 text-muted">Giving custodianship to user/traders of their own asset, users keep their
+                    private keys, unlike centrialized crypto exchanges.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="tokenomics__highlight mt-2">
+                <div class="tokenomics__highlight-text">
+                  <h5>Lowest Transaction Fees</h5>
+                  <p class="pe-3 text-muted">We route up your transaction across decentralized exchange networks to be
+                    filled with the lowest slippage possible.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="tokenomics-stats col-10 mx-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <h3 class="bold">$INU</h3>
+          <p class="text-muted">Token Symbol</p>
+        </div>
+        <div class="col-3">
+          <h3>1 Trillion</h3>
+          <p class="text-muted">Total Supply</p>
+        </div>
+        <div class="col-3">
+          <h3>500 Billion</h3>
+          <p class="text-muted">Circulating Supply</p>
+        </div>
+        <div class="col-3">
+          <h3>ERC20</h3>
+          <p class="text-muted">Token Type</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="donate" class="donate">
+  <div class="container">
+    <div class="row justify-content-evenly">
+      <div class="col col-md-4">
+        <h2>Feel like donating?</h2>
+        <p class="text-muted mb-4">As a community-powered project, INU runs thanks to its amazing volunteers and
+          generous
+          donors. If you would
+          like to pitch in, use the official ERC20 donation wallet here:</p>
+        <p>0x36c389E951386b25aaf247A8c0A6Df378b8af299</p>
+
+        <div class="col col-md-6">
+          <ol class="mt-4 mb-4">
+            <li class="mb-2"><strong>Accepted:</strong> Any ERC20 token.</li>
+            <li><strong>Preferred:</strong> $ETH, $USDT, $INU</li>
+          </ol>
+
+          <a href="https://etherscan.io/address/0x36c389E951386b25aaf247A8c0A6Df378b8af299" target="_blank"
+            class="btn btn-secondary clear small">View on Etherscan</a>
+        </div>
+      </div>
+
+      <div class="col col-md-2 eth text-center">
+        <img src="assets/img/donation-qr-code.png" />
+      </div>
+    </div>
+  </div>
+</section>

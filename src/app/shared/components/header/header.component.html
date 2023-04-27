@@ -1,0 +1,12 @@
+<header class="site-header static-top">
+  <nav class="container d-flex flex-column flex-md-row justify-content-between">
+    <a [class.header-top]="!top" [class.cursor-default]="top" [routerLinkActive]="['active']"
+      [routerLinkActiveOptions]="{exact:true}" [routerLink]="['/']">
+      <img (click)='scrollTop()' src="./assets/svg/logo.svg" alt="Inu Cash" />
+    </a>
+    <a href="/#roadmap">RoadMap</a>
+    <a href="/#tokenomics">Tokenomics</a>
+    <a href="/#donate">Donate</a>
+    <a class="btn btn-primary small" href="/#buy">Buy</a>
+  </nav>
+</header>

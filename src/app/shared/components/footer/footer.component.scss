@@ -1,0 +1,32 @@
+@import '../../../../assets/css/abstracts/_mixins.scss';
+
+footer {
+  .social {
+    img {
+      width: 15px;
+    }
+  }
+
+  #google_translate_element {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: auto;
+  }
+
+  h4 {
+    @include font-size(20px);
+    color: $green;
+    display: block;
+    margin: 0 0 10px;
+  }
+
+  span {
+    @include font-size(14px);
+    color: $gray-dark;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+}

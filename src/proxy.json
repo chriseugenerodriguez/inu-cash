@@ -1,0 +1,11 @@
+{
+  "/api/c/*": {
+    "target": "https://pro-api.coinmarketcap.com/v1",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/api/c/": ""
+    }
+  }
+}

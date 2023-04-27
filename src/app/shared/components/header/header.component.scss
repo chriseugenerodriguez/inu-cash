@@ -1,0 +1,57 @@
+@import '../../../../assets/css/abstracts/_variables.scss';
+@import '../../../../assets/css/abstracts/_mixins.scss';
+
+header {
+  padding-top: 10px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+
+  nav {
+    @include font-size(16px);
+    align-items: center;
+    display: flex;
+    position: relative;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    a {
+      width: auto;
+      display: flex;
+      color: $gray-lighter;
+
+      &:hover {
+        color: $green;
+      }
+
+      &:nth-child(2) {
+        margin-left: 72px;
+      }
+
+      &.btn {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 7px 30px;
+      }
+
+      img {
+        width: 72px;
+        position: fixed;
+        top: 0px;
+        z-index: 1;
+      }
+
+      &.cursor-default {
+        cursor: default;
+      }
+
+      &.header-top {
+        cursor: pointer;
+        img {
+          border-top: 10px solid #393e46;
+        }
+      }
+    }
+  }
+}
