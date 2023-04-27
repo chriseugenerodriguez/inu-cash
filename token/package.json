@@ -1,0 +1,36 @@
+{
+  "name": "inu-cash",
+  "version": "1.0.0",
+  "description": "inu cash is the first defi coin with all the goodies for sustainable growth and motivated commerce.",
+  "main": "truffle.js",
+  "scripts": {
+    "start": "ganache-cli --networkId 4447 --port 7545",
+    "lint": "solium -d contracts/",
+    "test": "truffle test",
+    "compile": "truffle compile"
+  },
+  "keywords": [
+    "smart-contract",
+    "etherium",
+    "defi"
+  ],
+  "author": "Chris Rodriguez",
+  "license": "ISC",
+  "dependencies": {
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "solc": "^0.8.4",
+    "truffle": "^5.3.8"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
+    "@openzeppelin/contracts-ethereum-package": "^3.0.0",
+    "@openzeppelin/upgrades": "^2.8.0",
+    "@truffle/hdwallet-provider": "^1.4.0",
+    "eslint": "^7.27.0",
+    "ethlint": "^1.2.5",
+    "ganache-cli": "^6.12.2",
+    "jshint": "^2.13.0",
+    "truffle-assertions": "^0.9.2"
+  }
+}
