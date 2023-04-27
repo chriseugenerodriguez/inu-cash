@@ -1,1 +1,0 @@
-{"ast":null,"code":"// SHARED\nexport * from './header/header.module';\nexport * from './footer/footer.module';","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
