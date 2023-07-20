@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './modules/home/home.component';
+import { NotfoundComponent } from './modules/notfound/notfound.component';
 
 const routes: Routes = [
-  { path: '', loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule) },
-  { path: '404', loadChildren: () => import('./modules/notfound/notfound.module').then(m => m.NotfoundModule) },
-  { path: 'buy', loadChildren: () => import('./modules/buy/buy.module').then(m => m.BuyModule) },
+  { path: '', component: HomeComponent },
+  { path: '404', component: NotfoundComponent },
   { path: '**', redirectTo: '/404' }
 ];
 
