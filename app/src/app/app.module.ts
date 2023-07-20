@@ -15,8 +15,8 @@ import { HeaderModule, FooterModule } from './shared/components';
 
 // SERVICES
 import { EtherscanService } from './shared/services';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+import { HomeModule } from './modules/home/home.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -28,13 +28,8 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
 
     HeaderModule,
-    FooterModule,
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: environment.production,
-      // Register the ServiceWorker as soon as the app is stable
-      // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000'
-    })
+    HomeModule,
+    FooterModule
   ],
   providers: [
     EtherscanService
