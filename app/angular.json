@@ -28,6 +28,7 @@
             "aot": true,
             "assets": [
               "src/assets/favicon",
+              "src/assets/fonts",
               "src/assets/icons",
               "src/assets/img",
               "src/assets/svg",
@@ -61,6 +62,7 @@
               "outputHashing": "none",
               "assets": [
                 "src/assets/favicon",
+                "src/assets/fonts",
                 "src/assets/icons",
                 "src/assets/img",
                 "src/assets/svg",
@@ -110,6 +112,7 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/assets/favicon",
+              "src/assets/fonts",
               "src/assets/icons",
               "src/assets/img",
               "src/assets/svg",

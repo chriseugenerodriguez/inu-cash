@@ -32,6 +32,14 @@
 <?xpacket end="w"?></metadata>
 <defs>
     <style>
+      @font-face {
+        font-family: 'Stark';
+        src: url('/assets/fonts/Stark.OTF') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
       .cls-1 {
         fill: #393e46;
       }
@@ -43,7 +51,7 @@
       .cls-3 {
         font-size: 500px;
         fill: #f6f5f5;
-        font-family: Stark;
+        font-family: "Stark", sans-serif;
       }
     </style>
   </defs>
