@@ -18,11 +18,6 @@
     ],
     "redirects": [
       {
-        "source": "/trade",
-        "destination": "/trade/",
-        "type": 301
-      },
-      {
         "source": "/swap",
         "destination": "/trade/",
         "type": 301
@@ -42,6 +37,7 @@
         "destination": "/trade/#/pool",
         "type": 301
       }
-    ]
+    ],
+    "trailingSlash": true
   }
 }
