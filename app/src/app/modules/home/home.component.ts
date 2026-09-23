@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 
 // SEO
 import { Meta, Title } from '@angular/platform-browser';
@@ -18,7 +18,9 @@ declare var Parallax: any;
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit, AfterViewInit {
+export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
+
+  private coinParallax: any;
 
   tCap;
   tvolume;
@@ -66,13 +68,21 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     const scene = document.getElementById('coins');
-    const parallaxInstance = new Parallax(scene, {
+    this.coinParallax = new Parallax(scene, {
       relativeInput: true,
       hoverOnly: true,
-      inputElement: document.getElementById('tokenomics')
+      inputElement: scene,
+      // Scale travel with the scene; layer depth keeps each coin inside its margins.
+      clipRelativeInput: true,
+      scalarX: 25,
+      scalarY: 25
     });
 
-    parallaxInstance.friction(0.2, 0.2);
+    this.coinParallax.friction(0.08, 0.08);
+  }
+
+  ngOnDestroy(): void {
+    this.coinParallax?.destroy();
   }
 
   etherCalls(): void {

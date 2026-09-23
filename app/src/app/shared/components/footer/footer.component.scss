@@ -30,3 +30,12 @@ footer {
     font-weight: bold;
   }
 }
+
+@media (max-width: 991px) {
+  footer .social {
+    width: 100%;
+    ul { flex-direction: row !important; flex-wrap: wrap; justify-content: center !important; gap: 8px; padding: 0; }
+    a { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; }
+  }
+  footer #google_translate_element { position: static; max-width: 100%; margin-top: 16px; }
+}

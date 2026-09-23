@@ -4,9 +4,9 @@
       [routerLinkActiveOptions]="{exact:true}" [routerLink]="['/']">
       <img (click)='scrollTop()' src="./assets/svg/logo.svg" alt="Inu Cash" />
     </a>
-    <a href="/#roadmap">RoadMap</a>
-    <a href="/#tokenomics">Tokenomics</a>
-    <a href="/#donate">Donate</a>
-    <a class="btn btn-primary small" href="/#buy">Buy</a>
+    <a href="/#roadmap" (click)="scrollToSection($event, 'roadmap')">RoadMap</a>
+    <a href="/#tokenomics" (click)="scrollToSection($event, 'tokenomics')">Tokenomics</a>
+    <a href="/#donate" (click)="scrollToSection($event, 'donate')">Donate</a>
+    <a class="btn btn-primary small" href="https://chriseugenerodriguez.com">Buy</a>
   </nav>
 </header>
