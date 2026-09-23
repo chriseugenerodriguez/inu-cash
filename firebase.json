@@ -8,8 +8,39 @@
     ],
     "rewrites": [
       {
+        "source": "/trade/**",
+        "destination": "/trade/index.html"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/trade",
+        "destination": "/trade/",
+        "type": 301
+      },
+      {
+        "source": "/swap",
+        "destination": "/trade/",
+        "type": 301
+      },
+      {
+        "source": "/swap/**",
+        "destination": "/trade/",
+        "type": 301
+      },
+      {
+        "source": "/exchange",
+        "destination": "/trade/#/pool",
+        "type": 301
+      },
+      {
+        "source": "/exchange/**",
+        "destination": "/trade/#/pool",
+        "type": 301
       }
     ]
   }

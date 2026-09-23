@@ -1,7 +1,8 @@
 {
   "$schema": "./node_modules/@angular/service-worker/config/schema.json",
   "index": "/index.html",
-  "dataGroups": [{
+  "dataGroups": [
+    {
       "name": "data",
       "urls": [
         "/assets/**"
@@ -25,7 +26,8 @@
       }
     }
   ],
-  "assetGroups": [{
+  "assetGroups": [
+    {
       "name": "app",
       "installMode": "prefetch",
       "resources": {
@@ -51,5 +53,17 @@
         ]
       }
     }
+  ],
+  "navigationUrls": [
+    "/**",
+    "!/**/*.*",
+    "!/**/*__*",
+    "!/**/*__*/**",
+    "!/swap",
+    "!/swap/**",
+    "!/exchange",
+    "!/exchange/**",
+    "!/trade",
+    "!/trade/**"
   ]
 }

@@ -13,10 +13,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Install dependencies and build
-        run: cd ./app && npm ci --ignore-scripts && npm run build
+        run: npm run setup && npm run lint:trading && npm run test:trading && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"

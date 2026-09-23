@@ -56,7 +56,7 @@ header {
   }
 }
 
-// Keep the desktop navigation; use two compact rows on phones.
+// Keep the desktop navigation; arrange section links in pairs on phones.
 @media (max-width: 767px) {
   header {
     position: relative;
@@ -65,7 +65,7 @@ header {
 
     nav {
       display: grid !important;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 8px;
       text-align: center;
 
@@ -75,12 +75,18 @@ header {
         justify-content: center;
         font-size: 13px;
 
-        &:first-child { grid-column: 1 / 3; justify-content: flex-start; }
+        grid-column: span 2;
+        &:first-child { grid-column: 1 / 4; justify-content: flex-start; }
         &:nth-child(2) { margin-left: 0; }
-        &.btn { grid-column: 3; grid-row: 1; padding: 10px 18px; }
+        &.btn { grid-column: 4 / 5; grid-row: 1; padding: 10px 18px; }
         img { position: static; width: 56px; }
         &.header-top img { border-top: 0; }
       }
     }
   }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header nav { gap: 14px; font-size: 12px; }
+  header nav a.btn { padding: 7px 16px; }
 }

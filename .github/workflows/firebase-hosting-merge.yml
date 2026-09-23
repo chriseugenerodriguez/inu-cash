@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Cache dependencies
         id: cache
@@ -26,10 +26,16 @@ jobs:
 
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        run: cd ./app && npm ci --ignore-scripts
+        run: npm --prefix app ci --ignore-scripts
+
+      - name: Install trading dependencies
+        run: npm --prefix trading/swap ci
+
+      - name: Validate trading app
+        run: npm run lint:trading && npm run test:trading
 
       - name: Build
-        run: cd ./app && npm run build
+        run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"

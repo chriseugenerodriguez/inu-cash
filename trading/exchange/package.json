@@ -1,0 +1,10 @@
+{
+  "name": "@inu-cash/exchange",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node scripts/interface.cjs build",
+    "start": "node scripts/interface.cjs start",
+    "test": "npm --prefix ../swap run test:unit"
+  }
+}

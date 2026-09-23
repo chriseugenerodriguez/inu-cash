@@ -1,0 +1,16 @@
+{
+  "name": "inu-cash-site",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "setup": "npm --prefix app ci && npm --prefix trading/swap ci",
+    "build": "node scripts/build.cjs",
+    "preview": "npm run build && node scripts/preview.cjs",
+    "start": "npm --prefix app start",
+    "start:swap": "npm --prefix trading/swap start",
+    "start:exchange": "npm --prefix trading/exchange start",
+    "test:trading": "npm --prefix trading/swap run test:unit",
+    "deploy": "npm run build && firebase deploy --only hosting",
+    "lint:trading": "npm --prefix trading/swap run lint"
+  }
+}
