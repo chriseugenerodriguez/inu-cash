@@ -22,10 +22,10 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   private coinParallax: any;
 
-  tCap;
-  tvolume;
-  tSupply;
-  tPrice;
+  tCap = '—';
+  tvolume = '—';
+  tSupply = '—';
+  tPrice = '—';
 
   roadMapOptions: OwlOptions = {
     loop: false,
@@ -87,6 +87,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   etherCalls(): void {
     this.ES.getContract().subscribe((res) => {
+      if (!res?.quote?.USD) return;
       this.tvolume = this._numberWithCommas(res['quote'].USD['volume_24h']);
       this.tPrice = this._numberWithCommas(res['quote'].USD['price']);
       this.tCap = this._numberWithCommas(res['quote'].USD['market_cap']);
@@ -94,7 +95,8 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     });
   }
 
-  private _numberWithCommas(x): number {
+  private _numberWithCommas(x): string {
+    if (x == null || !Number.isFinite(Number(x))) return '—';
     return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',');
   }
 }

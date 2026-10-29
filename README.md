@@ -56,7 +56,7 @@ npm run deploy
 Always deploy the combined build. Firebase serves `/trade/`
 before the Angular fallback. The landing service worker excludes trading
 navigation. GitHub workflows build all apps. The configured Firebase project
-is `inu-cash-deb36`.
+is `chriseugenerodriguez`, using Hosting site `chriseugenerodriguez-inucash`.
 
 ## Provenance and limitations
 
@@ -71,3 +71,7 @@ This repair is not a protocol/security audit or token launch. The legacy
 dependency tree has known npm audit findings and needs a separate dependency
 modernization review before a production trading release. No real-money
 transaction is required to build or test the site.
+
+## Personal demo data
+
+The landing site reads optional market content from Personal Supabase schema `inucash` using public, read-only configuration in `app/src/assets/personal-demo.json`. No saved market quote existed to migrate; missing data stays unavailable instead of becoming invented prices. The obsolete `/api/c/` backend dependency and embedded provider key were removed. Wallet state remains local; no auth accounts or wallet records are migrated. Firebase Hosting remains on Personal, including `/trade/`.

@@ -33,7 +33,8 @@
               "src/assets/img",
               "src/assets/svg",
               "src/assets/manifest.webmanifest",
-              "src/.htaccess"
+              "src/.htaccess",
+              "src/assets/personal-demo.json"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -68,7 +69,8 @@
                 "src/assets/svg",
                 "src/assets/manifest.webmanifest",
                 "src/robots.txt",
-                "src/.htaccess"
+                "src/.htaccess",
+                "src/assets/personal-demo.json"
               ],
               "budgets": [
                 {
@@ -117,7 +119,8 @@
               "src/assets/img",
               "src/assets/svg",
               "src/assets/manifest.webmanifest",
-              "src/robots.txt"
+              "src/robots.txt",
+              "src/assets/personal-demo.json"
             ],
             "styles": [
               "src/styles.scss"
